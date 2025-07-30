@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blogify</title>
+  <link rel="stylesheet" href="./read.css" />
+</head>
+<body>
+
+  <!-- Navbar (reuse from HOME.html) -->
+  <div class="navbar">
+    <div class="Rnav">
+      <h3><span>B</span>logify</h3>
+    </div>
+    <div class="Lnav">
+      <ul>
+        <li><a href="./HOME.html">Home</a></li>
+        <li><a href="./read.html">Draft</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+
+  <button><a href="./HOME.html"> Back</a></button>
+
+  <!-- Blog Content -->
+  <div id="blogDetails">
+    <h3 id="Ti"> </h3>
+    <p id="Cont"> </p>
+
+  </div>
+
+ 
+
+  <script>
+  // Get blog ID from query string
+  const urlParams = new URLSearchParams(window.location.search);
+  const blogId = urlParams.get('id');
+
+  // Fetch and display blog by ID
+  async  function fetchBlogById(id) {
+    try{
+      const res = await fetch(`http://localhost:3000/api/blogs/${id}`);
+      
+      if(!res.ok){
+       throw new Error(`Blog not found (status${res.status})`);
+      }
+      const blog =await res.json();
+      //display Blog Content
+      document.getElementById('Ti').textContent=blog.title;
+      document.getElementById('Cont').textContent=blog.content;
+    }catch (err){
+      console.error('Error fetching blog:',err);
+      document.getElementById('Ti').textContent = 'Blog Not Found';
+      document.getElementById('Cont').textContent ='';
+    }
+  }
+  //Load blog content or show "Not Found"
+  if(blogId){
+    fetchBlogById(blogId);
+  }else{
+    document.getElementById('TI').textContent="No Blog ID Provied";
+    document.getElementById('Cont').textContent='';
+  }
+  </script>
+
+</body>
+</html>
+

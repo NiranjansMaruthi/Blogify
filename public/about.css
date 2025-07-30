@@ -1,0 +1,159 @@
+ /* for the whole page*/
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+/* nav bar code*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0.3px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+    
+}
+/* logo desgin */
+.Rnav h3{
+    color: rgb(61, 58, 58);
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 25px;
+    margin-top: 2px;
+    font-size: 60px;
+}
+.Rnav h3 span{
+    color: rgb(231, 82, 107);
+    font-family:'Arial Narrow';
+}
+/* navbar links */
+.Lnav {
+    gap: 80px;
+    display: flex;
+    margin-right: 20px;
+}
+.Lnav ul {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.Lnav ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+.Lnav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-family: 'Arial Narrow';
+    display: inline-block; /* helps with consistent hover behavior */
+    transition: 0.3s ease;  /* smooth transitions */
+    border-radius: 10px;
+}
+/* navlinks with hover effect */
+.Lnav ul li a:hover {
+    background: rgb(231, 82, 107); /* Pink accent */
+    color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, #f79494, #f1d5d5);
+  padding: 40px 10px;
+}
+.hero h3 {
+    font-size: 55px;
+}
+.hero h3 span{
+    color: rgb(231, 82, 107);
+    font-family:'Arial Narrow';
+    font-size: 60px;
+    margin-left: -50px;
+}
+
+.hero p {
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section-content .text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.section-content .icon {
+  flex: 0.4;
+  text-align: center;
+}
+
+.section-content .icon img {
+  width: 80px;
+  opacity: 0.8;
+}
+
+.section.alt {
+  background-color: #f8f8f8;
+}
+
+.cards h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.connect {
+  background-color: #efddf1;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+}
+
+.connect a {
+  color: #60008a;
+  text-decoration: none;
+  font-weight: bold;
+}

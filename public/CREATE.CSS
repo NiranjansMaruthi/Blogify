@@ -1,0 +1,242 @@
+ /* for the whole page*/
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+/* nav bar code*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0.3px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+    
+}
+/* logo desgin */
+.Rnav h3{
+    color: rgb(61, 58, 58);
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 25px;
+    margin-top: 2px;
+    font-size: 60px;
+}
+.Rnav h3 span{
+    color: rgb(231, 82, 107);
+    font-family:'Arial Narrow';
+}
+/* navbar links */
+.Lnav {
+    gap: 80px;
+    display: flex;
+    margin-right: 20px;
+}
+.Lnav ul {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.Lnav ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+.Lnav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-family: 'Arial Narrow';
+    display: inline-block; /* helps with consistent hover behavior */
+    transition: 0.3s ease;  /* smooth transitions */
+    border-radius: 10px;
+}
+/* navlinks with hover effect */
+.Lnav ul li a:hover {
+    background: rgb(231, 82, 107); /* Pink accent */
+    color: rgb(255, 255, 255);
+}
+
+/*title card design*/
+.title-card{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.title-card h4{
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title-card input{
+    width: 900px;
+    height:40px;
+    font-size: 19px;
+    padding-left: 12px;
+    box-shadow: 0px 0.3px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+.title-card  ::placeholder{
+    font-size: 20px;
+    padding-left: 4px;
+}
+.post-box{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 1050px;
+    height:770px;
+    border-radius: 10px;
+    box-shadow:
+    -2px 0 5px rgba(0, 0, 0, 0.1),   /* left */
+    2px 0 5px rgba(0, 0, 0, 0.1),   /* right */
+    0px 2px 5px rgba(0, 0, 0, 0.1);   /* bottom */
+}
+
+/*Content box*/
+.Content-box{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 980px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    height: 490px;
+    box-shadow:
+    -2px 0 5px rgba(0, 0, 0, 0.1),   /* left */
+    2px 0 5px rgba(0, 0, 0, 0.1),   /* right */
+    0px 2px 5px rgba(0, 0, 0, 0.1);   /* bottom */
+}
+
+/* background-box*/
+.background-box textarea {
+    margin-left:15px;
+    margin-top: 15px;
+    width: 940px;
+    height: 470px;
+    padding-left: 10px;
+    text-align: left;
+    vertical-align: top;
+    border-radius: 10px;
+    resize: none; /* Optional: prevents resizing */
+    font-size: 20px;
+    font-family: inherit;
+    border: 2px solid black;
+}
+
+.background-box ::placeholder{
+    font-size: 20px;
+}
+/* buttons*/
+.f-buttons button{
+     margin-left: 20px;
+    margin-top: 20px
+}
+
+#b1{
+    font-size: 15px;
+    padding: 5px;
+    padding-right: 9px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(56, 56, 56);
+    border:  0.10px solid black;
+} 
+/* with hover effect*/
+#b1:hover{
+    background-color: rgb(231, 82, 107);
+    color: white;
+}
+
+#itc{
+    font-size: 15px;
+    padding: 5px;
+    padding-right: 9px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(56, 56, 56);
+    border: 0.10px solid black;
+    outline:none;
+    
+}
+/* with hover effect*/
+#itc:hover{
+    background-color: rgb(231, 82, 107);
+    color: white;
+}
+
+/*Categories part*/
+.categories{
+    width: 430px;
+    height: 330px;
+    background-color: rgb(196, 193, 193);
+    float: right;
+    box-shadow: 0px 0.3px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+    margin-top: -720px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.categories h3{
+    font-size:30px;
+    padding-left: 100px;
+    font-family: 'Arial Narrow', sans-serif;
+    padding-top: 20px;
+}
+.check-bts{
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.check-bts input {
+    transform: scale(1.3); /* increase size */
+}
+.categories h4{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+#success-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#box{
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 300px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+}
+#box::placeholder{
+    padding-left: 10px;
+}
+.categories  button{
+    width: 250px;
+    margin-top: 35px;
+    margin-left: 60px;
+    font-size: 17px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgb(231, 82, 107);
+    color: rgb(214, 214, 214);
+}
+.categories  button:hover{
+    background-color: rgb(232, 50, 80);
+    transform: scale(1.01); /* increase size */
+    color: rgb(214, 214, 214);
+     box-shadow: 0px 0.3px 10px rgba(0, 1, 0, 1.5); /* Deeper shadow */
+}
+/*footer*/
+.footer{
+    margin-top:30px;
+    width: 99.99%;
+    height: 80px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0.3px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+.footer p{
+    padding-top: 30px;
+    text-align: center;
+}

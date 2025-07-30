@@ -1,0 +1,107 @@
+  /* Reset */
+* {
+  padding: 0;
+  margin: 0;
+
+}
+/*BODY*/
+body{
+  min-height: 100vh;
+  margin: 0;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0.3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.Rnav h3 {
+  color: rgb(61, 58, 58);
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 25px;
+  font-size: 60px;
+  margin-top: 2px;
+}
+
+.Rnav h3 span {
+  color: rgb(231, 82, 107);
+  font-family: 'Arial Narrow';
+}
+
+.Lnav {
+  gap: 80px;
+  display: flex;
+  margin-right: 20px;
+}
+
+.Lnav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.Lnav ul li {
+  margin-left: 30px;
+}
+
+.Lnav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-family: 'Arial Narrow';
+  display: inline-block;
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+
+.Lnav ul li a:hover {
+  background: rgb(231, 82, 107);
+  color: white;
+}
+
+button{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+    
+}
+
+
+button a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 19px;
+}
+
+
+button:hover{
+    background: rgb(231, 82, 107);
+    border: 1px solid rgb(255, 255, 255);
+}
+button a:hover{
+    color: white;
+}
+
+#blogDetails{
+    width: 94%;
+    height: 600px;
+    background-color: #cfb3b3;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-y: scroll;
+    padding: 30px;
+    margin-top:10px;
+}
+#Cont{
+  width: 1390px;
+  height: auto;
+  padding: 15px;
+}
